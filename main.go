@@ -98,17 +98,3 @@ func (bc *blockchain) modify(index int, mtransaction string) {
 	bc.chain[index].hash = bc.chain[index].CalHash()
 
 }
-
-func main() {
-
-	bc := createbc()
-	bc.newblock("Bob to Alice", 6)
-	bc.newblock("Ali to Zoha", 10)
-	//bc.newblock("amna to ali", 5)
-	fmt.Println(bc.verify())
-	bc.modify(1, "ali amna")
-	fmt.Println(bc.verify())
-
-	bc.listblock()
-
-}
