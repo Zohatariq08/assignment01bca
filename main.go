@@ -6,7 +6,7 @@ import (
 	"fmt"
 )
 
-// the block details consists of the following
+//the block details consists of the following
 type BlockDetails struct {
 	transaction string //the transactiob consists of the string as well as the nonce
 	hash        string //hash of that block
